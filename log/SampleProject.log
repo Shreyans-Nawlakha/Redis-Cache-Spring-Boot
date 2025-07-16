@@ -1,0 +1,137 @@
+[2025-07-09 22:35:22,534] [main] INFO  [org.springframework.boot.StartupInfoLogger : 50] - Starting RedisDemoApplication using Java 21.0.4 with PID 16780 (D:\VS CODE\Spring Boot\sample\target\classes started by shrey in D:\VS CODE\Spring Boot\sample)
+[2025-07-09 22:35:22,617] [main] INFO  [org.springframework.boot.SpringApplication : 654] - No active profile set, falling back to 1 default profile: "default"
+[2025-07-09 22:35:34,966] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 22:35:34,979] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-07-09 22:35:35,919] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 889 ms. Found 1 JPA repository interface.
+[2025-07-09 22:35:36,000] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 22:35:36,012] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2025-07-09 22:35:36,117] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 326] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.redis.sample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2025-07-09 22:35:36,120] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+[2025-07-09 22:35:38,129] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 111] - Tomcat initialized with port 9000 (http)
+[2025-07-09 22:35:38,183] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting service [Tomcat]
+[2025-07-09 22:35:38,184] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting Servlet engine: [Apache Tomcat/10.1.42]
+[2025-07-09 22:35:38,472] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Initializing Spring embedded WebApplicationContext
+[2025-07-09 22:35:38,477] [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : 301] - Root WebApplicationContext: initialization completed in 15550 ms
+[2025-07-09 22:35:39,459] [main] INFO  [org.hibernate.jpa.internal.util.LogHelper : 31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-07-09 22:35:39,621] [main] INFO  [org.hibernate.Version : 44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+[2025-07-09 22:35:39,713] [main] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator : 50] - HHH000026: Second-level cache disabled
+[2025-07-09 22:35:40,344] [main] INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : 87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-07-09 22:35:40,409] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 109] - HikariPool-1 - Starting...
+[2025-07-09 22:35:41,939] [main] INFO  [com.zaxxer.hikari.pool.HikariPool : 554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cb44a2f
+[2025-07-09 22:35:41,949] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 122] - HikariPool-1 - Start completed.
+[2025-07-09 22:35:42,121] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 153] - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-07-09 22:35:42,129] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 101] - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[2025-07-09 22:35:49,888] [main] INFO  [org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard : 53] - HHH000182: No default (no-argument) constructor for class: com.redis.sample.entity.User (class must be instantiated by Interceptor)
+[2025-07-09 22:35:50,670] [main] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : 59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-07-09 22:35:50,881] [main] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 22:35:53,791] [main] WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : 236] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-07-09 22:35:55,817] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 243] - Tomcat started on port 9000 (http) with context path '/'
+[2025-07-09 22:35:55,842] [main] INFO  [org.springframework.boot.StartupInfoLogger : 56] - Started RedisDemoApplication in 34.779 seconds (process running for 36.803)
+[2025-07-09 22:49:42,350] [SpringApplicationShutdownHook] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 22:49:42,361] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 349] - HikariPool-1 - Shutdown initiated...
+[2025-07-09 22:49:42,384] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 351] - HikariPool-1 - Shutdown completed.
+[2025-07-09 22:49:46,262] [main] INFO  [org.springframework.boot.StartupInfoLogger : 50] - Starting RedisDemoApplication using Java 21.0.4 with PID 10772 (D:\VS CODE\Spring Boot\sample\target\classes started by shrey in D:\VS CODE\Spring Boot\sample)
+[2025-07-09 22:49:46,267] [main] INFO  [org.springframework.boot.SpringApplication : 654] - No active profile set, falling back to 1 default profile: "default"
+[2025-07-09 22:49:47,363] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 22:49:47,365] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-07-09 22:49:47,545] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 170 ms. Found 1 JPA repository interface.
+[2025-07-09 22:49:47,578] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 22:49:47,581] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2025-07-09 22:49:47,603] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 326] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.redis.sample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2025-07-09 22:49:47,604] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+[2025-07-09 22:49:48,354] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 111] - Tomcat initialized with port 9000 (http)
+[2025-07-09 22:49:48,375] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting service [Tomcat]
+[2025-07-09 22:49:48,376] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting Servlet engine: [Apache Tomcat/10.1.42]
+[2025-07-09 22:49:48,451] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Initializing Spring embedded WebApplicationContext
+[2025-07-09 22:49:48,451] [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : 301] - Root WebApplicationContext: initialization completed in 2131 ms
+[2025-07-09 22:49:48,702] [main] INFO  [org.hibernate.jpa.internal.util.LogHelper : 31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-07-09 22:49:48,781] [main] INFO  [org.hibernate.Version : 44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+[2025-07-09 22:49:48,835] [main] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator : 50] - HHH000026: Second-level cache disabled
+[2025-07-09 22:49:49,204] [main] INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : 87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-07-09 22:49:49,250] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 109] - HikariPool-1 - Starting...
+[2025-07-09 22:49:49,814] [main] INFO  [com.zaxxer.hikari.pool.HikariPool : 554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@795faad
+[2025-07-09 22:49:49,817] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 122] - HikariPool-1 - Start completed.
+[2025-07-09 22:49:49,876] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 153] - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-07-09 22:49:49,878] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 101] - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[2025-07-09 22:49:50,598] [main] INFO  [org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard : 53] - HHH000182: No default (no-argument) constructor for class: com.redis.sample.entity.User (class must be instantiated by Interceptor)
+[2025-07-09 22:49:50,750] [main] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : 59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-07-09 22:49:50,819] [main] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 22:49:51,441] [main] WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : 236] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-07-09 22:49:52,004] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 243] - Tomcat started on port 9000 (http) with context path '/'
+[2025-07-09 22:49:52,014] [main] INFO  [org.springframework.boot.StartupInfoLogger : 56] - Started RedisDemoApplication in 6.449 seconds (process running for 7.224)
+[2025-07-09 22:52:08,806] [http-nio-9000-exec-1] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-07-09 22:52:08,807] [http-nio-9000-exec-1] INFO  [org.springframework.web.servlet.FrameworkServlet : 532] - Initializing Servlet 'dispatcherServlet'
+[2025-07-09 22:52:08,809] [http-nio-9000-exec-1] INFO  [org.springframework.web.servlet.FrameworkServlet : 554] - Completed initialization in 2 ms
+[2025-07-09 22:58:48,197] [SpringApplicationShutdownHook] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 22:58:48,200] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 349] - HikariPool-1 - Shutdown initiated...
+[2025-07-09 22:58:48,212] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 351] - HikariPool-1 - Shutdown completed.
+[2025-07-09 22:58:51,759] [main] INFO  [org.springframework.boot.StartupInfoLogger : 50] - Starting RedisDemoApplication using Java 21.0.4 with PID 6108 (D:\VS CODE\Spring Boot\sample\target\classes started by shrey in D:\VS CODE\Spring Boot\sample)
+[2025-07-09 22:58:51,764] [main] INFO  [org.springframework.boot.SpringApplication : 654] - No active profile set, falling back to 1 default profile: "default"
+[2025-07-09 22:58:52,678] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 22:58:52,680] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-07-09 22:58:52,842] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interface.
+[2025-07-09 22:58:52,873] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 22:58:52,875] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2025-07-09 22:58:52,896] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 326] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.redis.sample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2025-07-09 22:58:52,897] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[2025-07-09 22:58:53,680] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 111] - Tomcat initialized with port 9000 (http)
+[2025-07-09 22:58:53,699] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting service [Tomcat]
+[2025-07-09 22:58:53,700] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting Servlet engine: [Apache Tomcat/10.1.42]
+[2025-07-09 22:58:53,800] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Initializing Spring embedded WebApplicationContext
+[2025-07-09 22:58:53,801] [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : 301] - Root WebApplicationContext: initialization completed in 1971 ms
+[2025-07-09 22:58:54,052] [main] INFO  [org.hibernate.jpa.internal.util.LogHelper : 31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-07-09 22:58:54,140] [main] INFO  [org.hibernate.Version : 44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+[2025-07-09 22:58:54,185] [main] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator : 50] - HHH000026: Second-level cache disabled
+[2025-07-09 22:58:54,551] [main] INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : 87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-07-09 22:58:54,593] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 109] - HikariPool-1 - Starting...
+[2025-07-09 22:58:55,126] [main] INFO  [com.zaxxer.hikari.pool.HikariPool : 554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72f3acc9
+[2025-07-09 22:58:55,128] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 122] - HikariPool-1 - Start completed.
+[2025-07-09 22:58:55,174] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 153] - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-07-09 22:58:55,176] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 101] - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[2025-07-09 22:58:55,882] [main] INFO  [org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard : 53] - HHH000182: No default (no-argument) constructor for class: com.redis.sample.entity.User (class must be instantiated by Interceptor)
+[2025-07-09 22:58:56,037] [main] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : 59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-07-09 22:58:56,084] [main] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 22:58:56,827] [main] WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : 236] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-07-09 22:58:57,368] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 243] - Tomcat started on port 9000 (http) with context path '/'
+[2025-07-09 22:58:57,377] [main] INFO  [org.springframework.boot.StartupInfoLogger : 56] - Started RedisDemoApplication in 6.264 seconds (process running for 6.984)
+[2025-07-09 22:59:12,784] [http-nio-9000-exec-2] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-07-09 22:59:12,790] [http-nio-9000-exec-2] INFO  [org.springframework.web.servlet.FrameworkServlet : 532] - Initializing Servlet 'dispatcherServlet'
+[2025-07-09 22:59:12,798] [http-nio-9000-exec-2] INFO  [org.springframework.web.servlet.FrameworkServlet : 554] - Completed initialization in 7 ms
+[2025-07-09 23:08:10,960] [SpringApplicationShutdownHook] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 23:08:10,964] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 349] - HikariPool-1 - Shutdown initiated...
+[2025-07-09 23:08:10,976] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 351] - HikariPool-1 - Shutdown completed.
+[2025-07-09 23:08:15,095] [main] INFO  [org.springframework.boot.StartupInfoLogger : 50] - Starting RedisDemoApplication using Java 21.0.4 with PID 2428 (D:\VS CODE\Spring Boot\sample\target\classes started by shrey in D:\VS CODE\Spring Boot\sample)
+[2025-07-09 23:08:15,100] [main] INFO  [org.springframework.boot.SpringApplication : 654] - No active profile set, falling back to 1 default profile: "default"
+[2025-07-09 23:08:16,078] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 23:08:16,080] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-07-09 23:08:16,258] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 167 ms. Found 1 JPA repository interface.
+[2025-07-09 23:08:16,282] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 296] - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-07-09 23:08:16,284] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 147] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2025-07-09 23:08:16,313] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 326] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.redis.sample.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[2025-07-09 23:08:16,314] [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 215] - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+[2025-07-09 23:08:17,148] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 111] - Tomcat initialized with port 9000 (http)
+[2025-07-09 23:08:17,165] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting service [Tomcat]
+[2025-07-09 23:08:17,166] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Starting Servlet engine: [Apache Tomcat/10.1.42]
+[2025-07-09 23:08:17,245] [main] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Initializing Spring embedded WebApplicationContext
+[2025-07-09 23:08:17,246] [main] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : 301] - Root WebApplicationContext: initialization completed in 2073 ms
+[2025-07-09 23:08:17,461] [main] INFO  [org.hibernate.jpa.internal.util.LogHelper : 31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-07-09 23:08:17,538] [main] INFO  [org.hibernate.Version : 44] - HHH000412: Hibernate ORM core version 6.5.3.Final
+[2025-07-09 23:08:17,596] [main] INFO  [org.hibernate.cache.internal.RegionFactoryInitiator : 50] - HHH000026: Second-level cache disabled
+[2025-07-09 23:08:17,983] [main] INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : 87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-07-09 23:08:18,024] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 109] - HikariPool-1 - Starting...
+[2025-07-09 23:08:18,587] [main] INFO  [com.zaxxer.hikari.pool.HikariPool : 554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78bd02c8
+[2025-07-09 23:08:18,591] [main] INFO  [com.zaxxer.hikari.HikariDataSource : 122] - HikariPool-1 - Start completed.
+[2025-07-09 23:08:18,641] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 153] - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-07-09 23:08:18,642] [main] WARN  [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl : 101] - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[2025-07-09 23:08:19,370] [main] INFO  [org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard : 53] - HHH000182: No default (no-argument) constructor for class: com.redis.sample.entity.User (class must be instantiated by Interceptor)
+[2025-07-09 23:08:19,524] [main] INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : 59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-07-09 23:08:19,567] [main] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 23:08:20,215] [main] WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : 236] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-07-09 23:08:20,738] [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 243] - Tomcat started on port 9000 (http) with context path '/'
+[2025-07-09 23:08:20,747] [main] INFO  [org.springframework.boot.StartupInfoLogger : 56] - Started RedisDemoApplication in 6.405 seconds (process running for 7.066)
+[2025-07-09 23:08:27,915] [http-nio-9000-exec-1] INFO  [org.apache.juli.logging.DirectJDKLog : 168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-07-09 23:08:27,916] [http-nio-9000-exec-1] INFO  [org.springframework.web.servlet.FrameworkServlet : 532] - Initializing Servlet 'dispatcherServlet'
+[2025-07-09 23:08:27,923] [http-nio-9000-exec-1] INFO  [org.springframework.web.servlet.FrameworkServlet : 554] - Completed initialization in 3 ms
+[2025-07-09 23:09:50,287] [SpringApplicationShutdownHook] INFO  [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : 650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-07-09 23:09:50,289] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 349] - HikariPool-1 - Shutdown initiated...
+[2025-07-09 23:09:50,297] [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource : 351] - HikariPool-1 - Shutdown completed.
